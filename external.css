@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/*.body{margin-top:0%;   background: #161623; }*/
+ h2{text-align:center;color:cyan;font-size:50px;margin:0%; margin-bottom:20px;}
+.back-img {
+  background-color:#150941;
+  background-image: url("img/sc-bg.png");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Float three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  padding:20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+.back-img h1{
+  font-size:40px;
+}
+
+}
+
+/**********************************************/
+
+.testimotionals .card {
+  position:relative;
+  overflow:hidden;
+  width:300px;
+  margin:0 auto;
+  /*background:#F1F1F2;*/
+  background:rgba(255,255,255,0.1);
+  padding:20px;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+@media screen and (max-width:1200px){
+.testimotionals .card {
+  margin:auto;
+  width: 33%;
+  /*padding: 10px;*/
+  position:relative;
+  overflow:hidden;
+  width:auto;
+  background:transparent;
+  box-sizing:border-box;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.5)
+}
+
+
+.testimotionals .card .content .image {
+  width:auto;
+}
+
+}
+
+.testimotionals .card .layer {
+  z-index:1;
+  position:absolute;
+  top:calc(100% - 2px);
+  height:100%;
+  width:100%;
+  left:0;
+  background:linear-gradient(to top, #150941, #F80040);
+  transition:0.5s;
+  
+}
+
+.testimotionals .card .content {
+  z-index:2; 
+  position:relative;
+}
+
+.testimotionals .card:hover  .layer{
+  top:0;
+}
+
+.testimotionals .card .content p {
+  font-size:20px;
+  line-height:24px;
+  color:#F1F1F2;
+  text-align:justify;
+  
+}
+.testimotionals .card .content .image {
+  width:auto;
+  margin:0 auto;
+  /*border-radius:50%;*/
+  overflow:hidden;
+  /*border: 4px solid white;*/
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  
+}
+
+.testimotionals .card .content .details h2 {
+font-size:18px;
+color:white;
+}
+.testimotionals .card .content .details h2 span {
+font-size:18px;
+color:purple;
+  transition:0.5s;
+}
+
+.testimotionals .card:hover .content .details h2 span {
+  color:white;
+  position:relative;
+}
